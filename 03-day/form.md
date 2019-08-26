@@ -2,7 +2,7 @@
 
 Django提供对表单处理的支持，可以简化并自动化大部分的表单处理工作。
 
-## 1 定义表单类 {#1--定义表单类}
+## 1 定义表单类 {1--定义表单类}
 
 表单系统的核心部分是Django 的Form类。 Django 的数据库模型描述一个对象的逻辑结构、行为以及展现给我们的方式，与此类似，Form类描述一个表单并决定它如何工作和展现。
 
@@ -30,7 +30,7 @@ class BookForm(forms.Form):
 
 注：[表单字段类型参考资料连接](https://yiyibooks.cn/xx/Django_1.11.6/ref/forms/fields.html)
 
-## 2 视图中使用表单类 {#2--视图中使用表单类}
+## 2 视图中使用表单类 {2--视图中使用表单类}
 
 ```
 from django.shortcuts import render
@@ -56,7 +56,7 @@ class BookView(View):
 * form.is\_valid\(\) 验证表单数据的合法性
 * form.cleaned\_data 验证通过的表单数据
 
-## 3 模板中使用表单类 {#3-模板中使用表单类}
+## 3 模板中使用表单类 {3-模板中使用表单类}
 
 ```
 <!DOCTYPE html>
@@ -78,7 +78,7 @@ class BookView(View):
 * csrf\_token 用于添加CSRF防护的字段
 * form 快速渲染表单字段的方法
 
-## 4 模型类表单 {#4--模型类表单}
+## 4 模型类表单 {4--模型类表单}
 
 如果表单中的数据与模型类对应，可以通过继承**forms.ModelForm**更快速的创建表单。
 
